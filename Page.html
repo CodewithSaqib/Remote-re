@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Historical Monuments</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="shortcut icon" href="/Images/Logo-removebg-preview.png" type="image/x-icon">
+        <style>
+          body{
+            overflow:hidden;
+            overflow-y: scroll;
+          }
+          .container{
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 1140px;
+}
+
+h1{
+  position: relative;
+  margin-bottom: 45px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  
+  &:hover{
+    flex: 7;
+  }
+}
+
+.item-1 { 
+  background-image: url(/Images/G1.jpg);
+}
+
+.item-2 { 
+  background-image: url(/Images/G2.jpg);
+}
+
+.item-3 { 
+  background-image: url(/Images/G3.jpg);
+}
+
+.item-4 { 
+  background-image: url(/Images/G$.jpg);
+}
+
+.item-5 { 
+  background-image: url(/Images/G5.jpg);
+}
+.item-6 { 
+  background-image: url(/Images/G6.jpg);
+}
+.item-7 { 
+  background-image: url(/Images/G7.jpg);
+}
+
+.social{
+  position: absolute;
+  right: 35px;
+  bottom: 0;
+  
+  img{
+    display: block;
+    width: 32px;
+  }
+}
+.list-unstyled{
+  text-decoration: none;
+  list-style-type: none;
+}
+        </style>
+        
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-dark ">
+            <div class="container-fluid">
+              <img src="/Images/Logo-removebg-preview.png" width="50" class="mx-3 text-bg-light " >
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">North</a></li>
+                      <li><a class="dropdown-item" href="#">East</a></li>
+                      <li><a class="dropdown-item" href="#">South</a></li>
+                      <li><a class="dropdown-item" href="#">West</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex ms-auto ">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-light " type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="height: 600px;">
+              <div class="carousel-item active">
+                <img src="/Images/pyramind egypt.jpg" class="d-block w-100" alt="..."  style="height: 600px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Pyramids</h5>
+                  <p>egypt</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/Images/taj mahal.webp" class="d-block w-100" alt="..."  style="height: 600px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>TAJ MAHAL</h5>
+                  <p>INDIA</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Images/petrafort.jpg" class="d-block w-100" alt="..."  style="height: 600px;">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Red Fort</h5>
+                  <p>India</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+  <h2 class="text-dark text-start font-monospace p-3 " data-aos="fade-down" data-aos-delay="1000"="500">Latest Content</h2>
+          <div class="d-flex overflow-hidden ">
+
+            <div class="container w-25  overflow-hidden  " data-aos="fade-right"  data-aos-delay="500"="500">
+              <img src="/Images/pr.webp" alt="" class="card-img-top  mt-3  ">
+              <h2 class="card-header text-danger ">Ferdinand Magellan</h2>
+              <p class="card-body "> Ferdinand Magellan, or Fernão de Magalhães (c. 1480-1521), was a Portuguese mariner whose expedition was the first to circumnavigate the globe in 1519-22...
+              </p>
+              <a href="https://www.worldhistory.org/Ferdinand_Magellan/"><button class="btn btn-danger ">Read More</button></a>
+         </div>
+         <div class="container w-25   overflow-hidden " data-aos="fade-left"  data-aos-delay="500"="500">
+           <img src="/Images/pr1.webp" alt="" class="card-img-top  mt-3  ">
+           <h2 class="card-header text-danger ">
+            The Twelve Labours of Herakles
+            </h2>
+           <p class="card-body ">A map illustrating the Twelve Labours of Herakles (Heracles, romanized as Hercules), probably the most famous of the ancient heroes in Greek mythology...
+          </p>
+          <a href="https://www.worldhistory.org/Ferdinand_Magellan/"><button class="btn btn-danger ">Read More</button></a>
+        </div>
+
+        <div class="container w-25  " data-aos="flip-right" data-aos-delay="500"="500">
+          <h2 class="card-header ">
+          About Us
+           </h2>
+          <p class="card-body mt-2 ">We are a non-profit organization publishing the world's most read history encyclopedia.
+
+          </p>
+           <p class="card-body "> Our mission is to engage people with cultural heritage and to improve history education worldwide.</p>
+         <a href="https://www.worldhistory.org/Ferdinand_Magellan/"><button class="btn btn-danger ">Learn More</button></a>
+       </div>
+
+      </div><hr>
+      <div class="container-fluid p-5 bg-danger text-white my-5" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="500">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="py-2">Free to read for the World Supported by You</h1>
+            <p class="py-2 fs-5">World History Encyclopedia is a non-profit organization. For only
+              $5 per month you can become
+              a member and support our
+              mission to engage people with cultural heritage and to improve history education
+              worldwide.</p>
+            <div class="d-flex gap-4 ">
+              <button class="btn btn-light fw-semibold">Become a Member</button>
+              <button class="btn btn-light fw-semibold">Donate Now</button>
+            </div>
+          </div>
+          <div class="col-md-4 p-3 d-flex justify-content-center align-items-center ">
+            <img class="opacity-25 h-auto w-100 " src="https://i.pinimg.com/564x/fe/7b/6d/fe7b6dc0aa72375015926754a93a5c85.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class=" d-flex ">  
+        <div class="container w-25 " data-aos="zoom-in-up" data-aos-delay="500"="500">
+          <img src="/Images/pr2.webp" alt="" class="card-img-top  mt-3  ">
+          <h2 class="card-header text-danger ">Daniel Morgan</h2>
+          <p class="card-body "> Daniel Morgan (l. c. 1735-1802) was an American frontiersman and soldier, most famous for leading a corps of riflemen during the American Revolutionary...
+
+          </p>
+          <a href="https://www.worldhistory.org/Daniel_Morgan/"><button class="btn btn-danger ">Read More</button></a>
+        </div>
+        <div class="container w-25 " data-aos="zoom-in" data-aos-delay="500"="500">
+          <img src="/Images/pr3.webp" alt="" class="card-img-top  mt-3  ">
+          <h2 class="card-header text-danger"> Bombing in 1945</h2>
+          <p class="card-body ">The bomber raid on Dresden was a controversial and highly destructive combined operation by Royal Air Force Lancaster bombers and United States Air...
+          </p>
+          <a href="https://www.worldhistory.org/Daniel_Morgan/"><button class="btn btn-danger ">Read More</button></a>
+        </div>
+        <div class="container-fluid  w-25 h-50"  data-aos="zoom-in-down" data-aos-delay="500"="500">
+          <h2>Visit Gallery</h2>
+          <img src="/Images/pr.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr2.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr2.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr2.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr2.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr2.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr3.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr4.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr3.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr4.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr3.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr4.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr3.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr4.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr3.webp" alt="" style="width: 30px; height: 30px;">
+          <img src="/Images/pr4.webp" alt="" style="width: 30px; height: 30px;">
+          <p class="font-monospace p-2 mt-2 ">Explore our Media Library with 19,435 images, videos, and 3D models.</p>
+          <a href="#"><button class="btn btn-danger ">VISIT</button></a>
+        </div>
+      </div>
+      <div class="d-flex">
+
+        <div class="container w-25 " data-aos="zoom-out" data-aos-delay="500"="500">
+          <img src="/Images/pr.webp" alt="" class="card-img-top  mt-3  ">
+          <h2 class="card-header text-danger ">Ferdinand Magellan</h2>
+          <p class="card-body "> Ferdinand Magellan, or Fernão de Magalhães (c. 1480-1521), was a Portuguese mariner whose expedition was the first to circumnavigate the globe in 1519-22...
+          </p>
+          <a href="https://www.worldhistory.org/Ferdinand_Magellan/"><button class="btn btn-danger ">Read More</button></a>
+     </div>
+     <div class="container w-25 " data-aos="zoom-out-left" data-aos-delay="500"="500">
+       <img src="/Images/pr1.webp" alt="" class="card-img-top  mt-3  ">
+       <h2 class="card-header text-danger ">
+        The Twelve Labours of Herakles
+        </h2>
+       <p class="card-body ">A map illustrating the Twelve Labours of Herakles (Heracles, romanized as Hercules), probably the most famous of the ancient heroes in Greek mythology...
+      </p>
+      <a href="https://www.worldhistory.org/Ferdinand_Magellan/"><button class="btn btn-danger ">Read More</button></a>
+    </div>
+    <div class="container-fluid  w-25 h-50" >
+      <h2>Awards</h2><br>
+      <img src="/Images/a1.webp" alt="" style="width: 100px; height: 100px;">
+      <img src="/Images/a2.webp" alt="" style="width: 100px; height: 100px;">
+      <img src="/Images/a3.webp" alt="" style="width: 100px; height: 100px;">
+      <img src="/Images/a4.webp" alt="" style="width: 100px; height: 100px;">
+
+    </div>
+  </div>
+  <div class="container">
+    <h1 class="text-center font-monospace ">Most Famous Anciet Places in Pakistan</h1>
+  
+    <div class="gallery-wrap">
+      <div class="item item-1"></div>
+      <div class="item item-2"></div>
+      <div class="item item-3"></div>
+      <div class="item item-4"></div>
+      <div class="item item-5"></div>
+      <div class="item item-6"></div>
+      <div class="item item-7"></div>
+    </div>
+   </div>
+  <div class="container-fluid mt-5 p-5" data-aos="flip-up" data-aos-easing="ease-in-sine" data-aos-delay="500" data-aos-duration="500">
+    <div class="row">
+      <div class="col-12">
+        <div class="card h-100 border-0 " style="background-color: #f5f5f5">
+          <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+          <div class="card-body pe-5">
+            <h6 class="text-bg-dark p-1 ps-2">Free Newsletter</h6>
+            <p class="text-muted fs-5 fw-normal">Our latest articles delivered to your
+              inbox, once a week:</p>
+            <form action="">
+              <input type="text" class="form-control" placeholder="Enter your email address" aria-label="Email address">
+              <p class="text-muted fs-5 fw-normal">Are you a...?</p>
+              <div>
+                <input type="radio" name="identity" id="">
+                <label for="identity" class="ms-2">History Enthusiast</label>
+              </div>
+              <div>
+                <input type="radio" name="identity" id="" value="student">
+                <label for="identity" class="ms-2">Student</label>
+              </div>
+              <div>
+                <input type="radio" name="identity" id="">
+                <label for="identity" class="ms-2">Teacher</label>
+              </div>
+
+              <div>
+                <input type="radio" name="identity" id="">
+                <label for="identity" class="ms-2">Librarian</label>
+
+              </div>
+
+              <button type="submit" class="btn btn-danger mt-3">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+<footer>
+  <div class="container-fluid p-5" style="background-color: #f3f3f3">
+    <div class="row">
+      <div class="col-md-4 border-end">
+        <img src="https://www.worldhistory.org/template/images/header/whe-logo.svg" alt="" class="w-100" style="max-width: 220px;">
+        <div class="mt-3">
+          <h5>Our Mission</h5>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam corporis laboriosam
+            perferendis facere earum minima saepe totam aspernatur consequuntur vero.</p>
+        </div>
+        <h5 class="mt-3">Follow Us</h5>
+        <div class=" d-flex justify-content-start align-items-center gap-4">
+          <a href=""><i class="bi bi-facebook fs-3"></i></a>
+          <a href=""><i class="bi bi-twitter fs-3"></i></a>
+          <a href=""><i class="bi bi-linkedin fs-3"></i></a>
+          <a href=""><i class="bi bi-github fs-3"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4 border-end">
+        <div class="container-fluid px-5">
+          <h4>Links</h4>
+          <ul class="list-unstyled mt-4 " id="footer_links">
+            <li class="my-2 "><a href="">Home</a></li>
+            <li class="my-2 "><a href="">Gallery</a></li>
+            <li class="my-2 "><a href="">About</a></li>
+            <li class="my-2 "><a href="">Contact Us</a></li>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h4 class="text-center">Contact Us</h4>
+        <div class="d-flex justify-content-center align-items-center gap-3 my-4">
+          <i class="bi bi-telephone-fill fs-3"></i>
+          <p class="m-0">123-456-7890</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center gap-3 my-4">
+          <i class="bi bi-envelope-fill fs-3"></i>
+          <p class="m-0">abc@example.com</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center gap-3 my-4">
+          <i class="bi bi-geo-alt-fill fs-3"></i>
+          <p class="m-0">123 Main Street, Anytown USA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid p-3 bg-black text-white ">
+    <div class="d-flex align-items-center justify-content-center">
+      <p class="m-0">Developed by: <span class="text-decoration-underline text-primary mx-3"> M.Saqib
+          Ahmed</span> Copyright © 2024. All
+        Rights reserved.</p>
+
+    </div>
+
+  </div>
+</footer>
+      
+
+            
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    </body>
+</html>
